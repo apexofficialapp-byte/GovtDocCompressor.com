@@ -1,0 +1,3555 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+  >
+
+  <!-- ================= SEO ================= -->
+
+  <title>
+    Government Exam Photo & Signature Resizer | Exact KB Image Compressor
+  </title>
+
+  <meta
+    name="description"
+    content="Free government exam photo resizer and exact KB image compressor. Compress passport photos, signatures and documents to 20KB, 50KB, 100KB or 200KB directly in your browser."
+  >
+
+  <meta
+    name="keywords"
+    content="government exam photo resizer, exact KB image compressor, online form photo size reducer, SSC photo compressor, UPSC photo resizer, banking exam photo resize, signature compressor, passport photo compressor"
+  >
+
+  <meta name="author" content="GovtDocCompressor.com">
+  <meta name="robots" content="index, follow">
+
+  <!-- Replace this with your real domain after deployment -->
+  <link
+    rel="canonical"
+    href="https://govtdoccompressor.com/"
+  >
+
+  <!-- ================= OPEN GRAPH ================= -->
+
+  <meta
+    property="og:type"
+    content="website"
+  >
+
+  <meta
+    property="og:title"
+    content="GovtDocCompressor.com — Compress Images to Exact KB"
+  >
+
+  <meta
+    property="og:description"
+    content="Compress government exam photos, signatures and documents to 20KB, 50KB, 100KB or 200KB directly in your browser."
+  >
+
+  <meta
+    property="og:url"
+    content="https://govtdoccompressor.com/"
+  >
+
+  <meta
+    property="og:site_name"
+    content="GovtDocCompressor.com"
+  >
+
+  <meta
+    property="og:image"
+    content="https://govtdoccompressor.com/og-image.jpg"
+  >
+
+  <!-- ================= TWITTER ================= -->
+
+  <meta
+    name="twitter:card"
+    content="summary_large_image"
+  >
+
+  <meta
+    name="twitter:title"
+    content="GovtDocCompressor.com — Exact KB Image Compressor"
+  >
+
+  <meta
+    name="twitter:description"
+    content="Compress passport photos, signatures and documents to your required KB size."
+  >
+
+  <meta
+    name="twitter:image"
+    content="https://govtdoccompressor.com/og-image.jpg"
+  >
+
+  <meta
+    name="theme-color"
+    content="#2563eb"
+  >
+
+  <!-- ================= TAILWIND ================= -->
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: [
+              "Inter",
+              "ui-sans-serif",
+              "system-ui",
+              "sans-serif"
+            ]
+          }
+        }
+      }
+    };
+  </script>
+
+  <!-- ================= CUSTOM CSS ================= -->
+
+  <style>
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background:
+        radial-gradient(
+          circle at 10% 0%,
+          rgba(59, 130, 246, 0.10),
+          transparent 30%
+        ),
+        radial-gradient(
+          circle at 90% 10%,
+          rgba(99, 102, 241, 0.08),
+          transparent 25%
+        ),
+        #f8fafc;
+    }
+
+    .upload-zone {
+      transition:
+        border-color .2s ease,
+        background-color .2s ease,
+        transform .2s ease,
+        box-shadow .2s ease;
+    }
+
+    .upload-zone.dragover {
+      border-color: #2563eb;
+      background: #eff6ff;
+      transform: scale(1.01);
+      box-shadow: 0 15px 40px rgba(37, 99, 235, .12);
+    }
+
+    .preset {
+      transition: all .2s ease;
+    }
+
+    .preset:hover {
+      transform: translateY(-2px);
+    }
+
+    .preset.active {
+      background: #2563eb;
+      border-color: #2563eb;
+      color: white;
+      box-shadow:
+        0 10px 25px rgba(37, 99, 235, .20);
+    }
+
+    .checkerboard {
+      background-color: #f8fafc;
+
+      background-image:
+        linear-gradient(
+          45deg,
+          #e2e8f0 25%,
+          transparent 25%
+        ),
+        linear-gradient(
+          -45deg,
+          #e2e8f0 25%,
+          transparent 25%
+        ),
+        linear-gradient(
+          45deg,
+          transparent 75%,
+          #e2e8f0 75%
+        ),
+        linear-gradient(
+          -45deg,
+          transparent 75%,
+          #e2e8f0 75%
+        );
+
+      background-size: 20px 20px;
+
+      background-position:
+        0 0,
+        0 10px,
+        10px -10px,
+        -10px 0;
+    }
+
+    .spinner {
+      width: 18px;
+      height: 18px;
+
+      border-radius: 50%;
+
+      border:
+        2px solid rgba(255,255,255,.35);
+
+      border-top-color: white;
+
+      animation:
+        spin .7s linear infinite;
+    }
+
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    .fade-in {
+      animation:
+        fadeIn .35s ease-out;
+    }
+
+    @keyframes fadeIn {
+
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+    }
+
+    .progress-bar {
+      transition:
+        width .25s ease;
+    }
+
+    summary {
+      list-style: none;
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+  </style>
+
+</head>
+
+
+<body class="font-sans text-slate-800">
+
+
+<!-- ============================================================
+     HEADER
+============================================================= -->
+
+<header
+  class="
+    sticky top-0 z-50
+    border-b border-slate-200
+    bg-white/90 backdrop-blur-xl
+  "
+>
+
+  <div
+    class="
+      max-w-6xl mx-auto
+      px-4 sm:px-6
+      py-4
+      flex items-center justify-between gap-4
+    "
+  >
+
+    <!-- LOGO -->
+
+    <a
+      href="#"
+      class="flex items-center gap-3"
+    >
+
+      <div
+        class="
+          w-10 h-10
+          rounded-xl
+          bg-blue-600
+          text-white
+          flex items-center justify-center
+          shadow-lg shadow-blue-600/20
+        "
+      >
+
+        <svg
+          width="22"
+          height="22"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+
+          <path
+            d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"
+          />
+
+          <polyline
+            points="7 10 12 15 17 10"
+          />
+
+          <line
+            x1="12"
+            y1="15"
+            x2="12"
+            y2="3"
+          />
+
+        </svg>
+
+      </div>
+
+
+      <div>
+
+        <div
+          class="
+            text-lg
+            font-black
+            tracking-tight
+          "
+        >
+          GovtDoc<span class="text-blue-600">Compressor</span>
+        </div>
+
+        <div
+          class="
+            hidden sm:block
+            text-[11px]
+            text-slate-500
+          "
+        >
+          Government form image tools
+        </div>
+
+      </div>
+
+    </a>
+
+
+    <!-- SECURITY BADGE -->
+
+    <div
+      class="
+        flex items-center gap-2
+        rounded-full
+        border border-emerald-200
+        bg-emerald-50
+        px-3 py-2
+        text-xs sm:text-sm
+        font-bold
+        text-emerald-700
+      "
+    >
+
+      🔒
+
+      <span>
+        100% Secure & Free
+      </span>
+
+    </div>
+
+  </div>
+
+</header>
+
+
+
+<!-- ============================================================
+     MAIN
+============================================================= -->
+
+<main
+  class="
+    max-w-6xl mx-auto
+    px-4 sm:px-6
+    py-8 sm:py-12
+  "
+>
+
+
+<!-- ================= HERO ================= -->
+
+<section
+  class="
+    max-w-3xl
+    mx-auto
+    text-center
+    mb-8
+  "
+>
+
+  <div
+    class="
+      inline-flex
+      items-center
+      rounded-full
+      border border-blue-100
+      bg-blue-50
+      px-3 py-1.5
+      text-xs
+      font-bold
+      text-blue-700
+      mb-4
+    "
+  >
+
+    🇮🇳
+    Made for Indian Government Forms
+
+  </div>
+
+
+  <h1
+    class="
+      text-3xl sm:text-5xl
+      font-black
+      tracking-tight
+      leading-tight
+      text-slate-900
+    "
+  >
+
+    Compress Photos & Signatures
+
+    <span class="text-blue-600">
+      to Exact KB
+    </span>
+
+  </h1>
+
+
+  <p
+    class="
+      mt-4
+      text-base sm:text-lg
+      leading-relaxed
+      text-slate-600
+    "
+  >
+
+    Resize passport photos, signatures and documents
+    for SSC, UPSC, banking, railway and other
+    government application forms.
+
+  </p>
+
+</section>
+
+
+
+<!-- ================= PRIVACY ================= -->
+
+<div
+  class="
+    mb-7
+    rounded-2xl
+    border border-emerald-200
+    bg-emerald-50
+    p-4 sm:p-5
+  "
+>
+
+  <div class="flex items-start gap-3">
+
+    <div class="text-xl">
+      🔒
+    </div>
+
+    <div>
+
+      <h2
+        class="
+          font-black
+          text-emerald-900
+        "
+      >
+        100% Safe & Private
+      </h2>
+
+      <p
+        class="
+          mt-1
+          text-sm
+          leading-relaxed
+          text-emerald-800
+        "
+      >
+
+        Files are processed directly in your browser.
+        <strong>
+          Nothing is uploaded to a server.
+        </strong>
+
+        Your images stay on your device.
+
+      </p>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+
+<!-- ============================================================
+     MAIN TOOL
+============================================================= -->
+
+<section
+  class="
+    overflow-hidden
+    rounded-3xl
+    border border-slate-200
+    bg-white
+    shadow-[0_20px_60px_rgba(15,23,42,.08)]
+  "
+>
+
+  <div class="p-5 sm:p-8">
+
+
+    <!-- ================= PRESETS ================= -->
+
+    <div class="mb-7">
+
+      <div
+        class="
+          flex items-center
+          justify-between
+          gap-3
+          mb-3
+        "
+      >
+
+        <h2
+          class="
+            text-lg
+            font-black
+            text-slate-900
+          "
+        >
+          Select target size
+        </h2>
+
+
+        <span
+          id="targetLabel"
+          class="
+            rounded-full
+            bg-slate-100
+            px-3 py-1.5
+            text-xs
+            font-bold
+            text-slate-600
+          "
+        >
+          50 KB selected
+        </span>
+
+      </div>
+
+
+      <div
+        class="
+          grid
+          grid-cols-2
+          sm:grid-cols-4
+          gap-3
+        "
+      >
+
+        <button
+          type="button"
+          class="preset rounded-2xl border border-slate-200 bg-white p-4 text-left"
+          data-target="20"
+        >
+
+          <div class="font-black">
+            20 KB
+          </div>
+
+          <div class="mt-1 text-xs opacity-60">
+            Signatures
+          </div>
+
+        </button>
+
+
+        <button
+          type="button"
+          class="preset active rounded-2xl border border-slate-200 bg-white p-4 text-left"
+          data-target="50"
+        >
+
+          <div class="font-black">
+            50 KB
+          </div>
+
+          <div class="mt-1 text-xs opacity-70">
+            Photos
+          </div>
+
+        </button>
+
+
+        <button
+          type="button"
+          class="preset rounded-2xl border border-slate-200 bg-white p-4 text-left"
+          data-target="100"
+        >
+
+          <div class="font-black">
+            100 KB
+          </div>
+
+          <div class="mt-1 text-xs opacity-60">
+            ID Proofs
+          </div>
+
+        </button>
+
+
+        <button
+          type="button"
+          class="preset rounded-2xl border border-slate-200 bg-white p-4 text-left"
+          data-target="200"
+        >
+
+          <div class="font-black">
+            200 KB
+          </div>
+
+          <div class="mt-1 text-xs opacity-60">
+            Maximum
+          </div>
+
+        </button>
+
+      </div>
+
+    </div>
+
+
+
+    <!-- ========================================================
+         UPLOAD AREA
+
+         IMPORTANT:
+         The input is NOT inside the clickable button.
+         This avoids the Android double-click issue.
+    ========================================================= -->
+
+    <div
+      id="uploadZone"
+      class="
+        upload-zone
+        cursor-pointer
+        rounded-3xl
+        border-2 border-dashed
+        border-slate-300
+        bg-slate-50
+        p-7 sm:p-12
+        text-center
+      "
+    >
+
+      <!-- REAL FILE INPUT -->
+
+      <input
+        id="fileInput"
+        type="file"
+        accept="image/jpeg,image/png,.jpg,.jpeg,.png"
+        class="hidden"
+      >
+
+
+      <div
+        class="
+          mx-auto
+          flex
+          h-16 w-16
+          items-center justify-center
+          rounded-2xl
+          bg-blue-100
+          text-blue-600
+          mb-5
+        "
+      >
+
+        <svg
+          width="30"
+          height="30"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+
+          <path
+            d="M16 16l-4-4-4 4"
+          />
+
+          <path
+            d="M12 12v9"
+          />
+
+          <path
+            d="M20.39 17.39A5 5 0 0 0 18 8h-1.26A8 8 0 1 0 3 16.3"
+          />
+
+        </svg>
+
+      </div>
+
+
+      <h3
+        class="
+          text-lg sm:text-xl
+          font-black
+          text-slate-900
+        "
+      >
+        Drop your image here
+      </h3>
+
+
+      <p
+        class="
+          mt-2
+          text-sm
+          text-slate-500
+        "
+      >
+        or click anywhere here to choose an image
+      </p>
+
+
+      <!-- BUTTON -->
+
+      <button
+        id="browseButton"
+        type="button"
+        class="
+          mt-5
+          inline-flex
+          items-center
+          justify-center
+          rounded-2xl
+          bg-blue-600
+          px-6 py-3
+          font-bold
+          text-white
+          shadow-lg
+          shadow-blue-600/20
+          transition
+          hover:bg-blue-700
+          active:scale-95
+        "
+      >
+        Choose Image
+      </button>
+
+
+      <p
+        class="
+          mt-4
+          text-xs
+          text-slate-400
+        "
+      >
+        JPG, JPEG or PNG • Maximum 50 MB
+      </p>
+
+    </div>
+
+
+
+    <!-- ========================================================
+         RESULT
+    ========================================================= -->
+
+    <div
+      id="resultArea"
+      class="hidden mt-8"
+    >
+
+      <!-- HEADER -->
+
+      <div
+        class="
+          flex flex-col
+          sm:flex-row
+          sm:items-center
+          justify-between
+          gap-3
+          mb-5
+        "
+      >
+
+        <div>
+
+          <h2
+            class="
+              text-xl
+              font-black
+              text-slate-900
+            "
+          >
+            Compression Preview
+          </h2>
+
+
+          <p
+            id="fileName"
+            class="
+              mt-1
+              max-w-[320px]
+              truncate
+              text-sm
+              text-slate-500
+            "
+          ></p>
+
+        </div>
+
+
+        <button
+          id="resetButton"
+          type="button"
+          class="
+            text-sm
+            font-bold
+            text-slate-500
+            transition
+            hover:text-red-600
+          "
+        >
+          Remove image
+        </button>
+
+      </div>
+
+
+
+      <!-- ================= PROGRESS ================= -->
+
+      <div
+        id="progressContainer"
+        class="hidden mb-5"
+      >
+
+        <div
+          class="
+            flex
+            justify-between
+            text-xs
+            font-bold
+            text-slate-500
+            mb-2
+          "
+        >
+
+          <span>
+            Compressing...
+          </span>
+
+          <span id="progressText">
+            0%
+          </span>
+
+        </div>
+
+
+        <div
+          class="
+            h-2
+            overflow-hidden
+            rounded-full
+            bg-slate-100
+          "
+        >
+
+          <div
+            id="progressBar"
+            class="
+              progress-bar
+              h-full
+              w-0
+              rounded-full
+              bg-blue-600
+            "
+          ></div>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- ================= PREVIEW GRID ================= -->
+
+      <div
+        class="
+          grid
+          lg:grid-cols-2
+          gap-5
+        "
+      >
+
+        <!-- ORIGINAL -->
+
+        <div
+          class="
+            overflow-hidden
+            rounded-2xl
+            border border-slate-200
+          "
+        >
+
+          <div
+            class="
+              flex items-center
+              justify-between
+              border-b border-slate-200
+              bg-slate-50
+              px-4 py-3
+            "
+          >
+
+            <span class="text-sm font-black">
+              Original
+            </span>
+
+            <span
+              id="originalSize"
+              class="text-xs font-bold text-slate-500"
+            >
+              —
+            </span>
+
+          </div>
+
+
+          <div
+            class="
+              checkerboard
+              flex
+              min-h-[260px]
+              items-center
+              justify-center
+              p-5
+            "
+          >
+
+            <img
+              id="originalPreview"
+              alt="Original image preview"
+              class="
+                max-h-[330px]
+                max-w-full
+                rounded-xl
+                object-contain
+                shadow-md
+              "
+            >
+
+          </div>
+
+        </div>
+
+
+
+        <!-- COMPRESSED -->
+
+        <div
+          class="
+            overflow-hidden
+            rounded-2xl
+            border border-slate-200
+          "
+        >
+
+          <div
+            class="
+              flex items-center
+              justify-between
+              border-b border-slate-200
+              bg-slate-50
+              px-4 py-3
+            "
+          >
+
+            <span class="text-sm font-black">
+              Compressed
+            </span>
+
+            <span
+              id="compressedSize"
+              class="text-xs font-bold text-blue-600"
+            >
+              —
+            </span>
+
+          </div>
+
+
+          <div
+            class="
+              checkerboard
+              flex
+              min-h-[260px]
+              items-center
+              justify-center
+              p-5
+            "
+          >
+
+            <img
+              id="compressedPreview"
+              alt="Compressed image preview"
+              class="
+                max-h-[330px]
+                max-w-full
+                rounded-xl
+                object-contain
+                shadow-md
+              "
+            >
+
+            <div
+              id="compressedPlaceholder"
+              class="text-center text-sm text-slate-400"
+            >
+              Compressed preview will appear here
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- ================= STATISTICS ================= -->
+
+      <div
+        class="
+          grid
+          grid-cols-2
+          sm:grid-cols-4
+          gap-3
+          mt-5
+        "
+      >
+
+        <div
+          class="
+            rounded-2xl
+            bg-slate-50
+            p-4
+          "
+        >
+
+          <div class="text-xs text-slate-500">
+            Original
+          </div>
+
+          <div
+            id="statOriginal"
+            class="mt-1 font-black"
+          >
+            —
+          </div>
+
+        </div>
+
+
+        <div
+          class="
+            rounded-2xl
+            bg-blue-50
+            p-4
+          "
+        >
+
+          <div class="text-xs text-blue-600">
+            Compressed
+          </div>
+
+          <div
+            id="statCompressed"
+            class="mt-1 font-black text-blue-700"
+          >
+            —
+          </div>
+
+        </div>
+
+
+        <div
+          class="
+            rounded-2xl
+            bg-emerald-50
+            p-4
+          "
+        >
+
+          <div class="text-xs text-emerald-600">
+            Saved
+          </div>
+
+          <div
+            id="statSaved"
+            class="mt-1 font-black text-emerald-700"
+          >
+            —
+          </div>
+
+        </div>
+
+
+        <div
+          class="
+            rounded-2xl
+            bg-purple-50
+            p-4
+          "
+        >
+
+          <div class="text-xs text-purple-600">
+            Quality
+          </div>
+
+          <div
+            id="statQuality"
+            class="mt-1 font-black text-purple-700"
+          >
+            —
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- ================= STATUS ================= -->
+
+      <div
+        id="statusBox"
+        class="
+          mt-5
+          rounded-2xl
+          border border-slate-200
+          bg-slate-50
+          p-4
+          text-sm
+          text-slate-600
+        "
+      >
+        Upload an image to begin.
+      </div>
+
+
+
+      <!-- ================= DOWNLOAD ================= -->
+
+      <button
+        id="downloadButton"
+        type="button"
+        disabled
+        class="
+          mt-5
+          flex w-full
+          items-center
+          justify-center
+          gap-3
+          rounded-2xl
+          bg-blue-600
+          px-6 py-4
+          font-black
+          text-white
+          shadow-lg
+          shadow-blue-600/20
+          transition
+          hover:bg-blue-700
+          disabled:cursor-not-allowed
+          disabled:bg-slate-300
+          disabled:shadow-none
+        "
+      >
+
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+
+          <path
+            d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"
+          />
+
+          <polyline
+            points="7 10 12 15 17 10"
+          />
+
+          <line
+            x1="12"
+            y1="15"
+            x2="12"
+            y2="3"
+          />
+
+        </svg>
+
+        Download Compressed File
+
+      </button>
+
+
+      <p
+        class="
+          mt-3
+          text-center
+          text-xs
+          text-slate-400
+        "
+      >
+        Generated locally on your device.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- ============================================================
+     HOW IT WORKS
+============================================================= -->
+
+<section class="mt-14">
+
+  <div class="mb-7 text-center">
+
+    <h2
+      class="
+        text-2xl sm:text-3xl
+        font-black
+        text-slate-900
+      "
+    >
+      How it works
+    </h2>
+
+    <p
+      class="
+        mt-2
+        text-slate-500
+      "
+    >
+      Compress your image in three simple steps.
+    </p>
+
+  </div>
+
+
+  <div
+    class="
+      grid
+      md:grid-cols-3
+      gap-5
+    "
+  >
+
+    <div
+      class="
+        rounded-3xl
+        border border-slate-200
+        bg-white
+        p-6
+        shadow-sm
+      "
+    >
+
+      <div
+        class="
+          flex
+          h-11 w-11
+          items-center justify-center
+          rounded-xl
+          bg-blue-100
+          font-black
+          text-blue-600
+        "
+      >
+        1
+      </div>
+
+      <h3 class="mt-5 text-lg font-black">
+        Upload
+      </h3>
+
+      <p
+        class="
+          mt-2
+          text-sm
+          leading-relaxed
+          text-slate-500
+        "
+      >
+        Select your passport photo,
+        signature or document.
+      </p>
+
+    </div>
+
+
+    <div
+      class="
+        rounded-3xl
+        border border-slate-200
+        bg-white
+        p-6
+        shadow-sm
+      "
+    >
+
+      <div
+        class="
+          flex
+          h-11 w-11
+          items-center justify-center
+          rounded-xl
+          bg-purple-100
+          font-black
+          text-purple-600
+        "
+      >
+        2
+      </div>
+
+      <h3 class="mt-5 text-lg font-black">
+        Choose KB
+      </h3>
+
+      <p
+        class="
+          mt-2
+          text-sm
+          leading-relaxed
+          text-slate-500
+        "
+      >
+        Choose 20KB, 50KB,
+        100KB or 200KB.
+      </p>
+
+    </div>
+
+
+    <div
+      class="
+        rounded-3xl
+        border border-slate-200
+        bg-white
+        p-6
+        shadow-sm
+      "
+    >
+
+      <div
+        class="
+          flex
+          h-11 w-11
+          items-center justify-center
+          rounded-xl
+          bg-emerald-100
+          font-black
+          text-emerald-600
+        "
+      >
+        3
+      </div>
+
+      <h3 class="mt-5 text-lg font-black">
+        Download
+      </h3>
+
+      <p
+        class="
+          mt-2
+          text-sm
+          leading-relaxed
+          text-slate-500
+        "
+      >
+        Preview the compressed image
+        and download it instantly.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- ============================================================
+     EDUCATIONAL SEO CONTENT
+============================================================= -->
+
+<section
+  class="
+    mt-14
+    rounded-3xl
+    border border-slate-200
+    bg-white
+    p-6 sm:p-9
+    shadow-sm
+  "
+>
+
+  <div class="mx-auto max-w-4xl">
+
+    <div class="mb-8 text-center">
+
+      <div
+        class="
+          mb-3
+          inline-flex
+          rounded-full
+          bg-slate-100
+          px-3 py-1
+          text-xs
+          font-bold
+          text-slate-600
+        "
+      >
+        Government Exam Image Guide
+      </div>
+
+
+      <h2
+        class="
+          text-2xl sm:text-3xl
+          font-black
+          text-slate-900
+        "
+      >
+        Government Exam Photo & Signature Requirements
+      </h2>
+
+
+      <p
+        class="
+          mt-3
+          text-slate-500
+        "
+      >
+        Always check the latest official examination
+        notification before submitting your application.
+      </p>
+
+    </div>
+
+
+    <div class="space-y-8">
+
+      <article>
+
+        <h3 class="text-xl font-black">
+          SSC Application Photo & Signature
+        </h3>
+
+        <p
+          class="
+            mt-2
+            text-sm
+            leading-7
+            text-slate-600
+          "
+        >
+          SSC application portals may require candidates
+          to upload photographs, signatures and documents
+          according to specifications mentioned in the
+          particular examination notification. File size,
+          format and dimensions can vary between examinations.
+        </p>
+
+      </article>
+
+
+      <article>
+
+        <h3 class="text-xl font-black">
+          UPSC Application Images
+        </h3>
+
+        <p
+          class="
+            mt-2
+            text-sm
+            leading-7
+            text-slate-600
+          "
+        >
+          UPSC application systems can require photographs,
+          signatures and identity documents with specific
+          technical requirements. Candidates should always
+          follow the instructions in the current official
+          notification.
+        </p>
+
+      </article>
+
+
+      <article>
+
+        <h3 class="text-xl font-black">
+          Banking Exam Photo & Signature
+        </h3>
+
+        <p
+          class="
+            mt-2
+            text-sm
+            leading-7
+            text-slate-600
+          "
+        >
+          Banking recruitment applications commonly require
+          a photograph and signature in specified file formats,
+          dimensions and file-size ranges. Requirements can
+          differ between recruitment examinations.
+        </p>
+
+      </article>
+
+
+      <article>
+
+        <h3 class="text-xl font-black">
+          Railway & Other Government Forms
+        </h3>
+
+        <p
+          class="
+            mt-2
+            text-sm
+            leading-7
+            text-slate-600
+          "
+        >
+          Railway, state government and other recruitment
+          portals may use different image-upload rules.
+          Always compare the final file with the requirements
+          listed on the official application portal.
+        </p>
+
+      </article>
+
+
+      <div
+        class="
+          rounded-2xl
+          border border-amber-200
+          bg-amber-50
+          p-5
+        "
+      >
+
+        <h3
+          class="
+            font-black
+            text-amber-900
+          "
+        >
+          ⚠️ Important
+        </h3>
+
+        <p
+          class="
+            mt-2
+            text-sm
+            leading-6
+            text-amber-800
+          "
+        >
+          There is no universal government-form photo size.
+          Requirements can change by examination and year.
+          Always verify the current official notification
+          before uploading your image.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- ============================================================
+     FAQ
+============================================================= -->
+
+<section class="mt-14">
+
+  <div class="mb-7 text-center">
+
+    <h2
+      class="
+        text-2xl sm:text-3xl
+        font-black
+        text-slate-900
+      "
+    >
+      Frequently Asked Questions
+    </h2>
+
+  </div>
+
+
+  <div
+    class="
+      grid
+      md:grid-cols-2
+      gap-4
+    "
+  >
+
+    <details
+      class="
+        group
+        rounded-2xl
+        border border-slate-200
+        bg-white
+        p-5
+      "
+    >
+
+      <summary
+        class="
+          cursor-pointer
+          flex
+          items-center
+          justify-between
+          gap-4
+          font-black
+        "
+      >
+
+        Can I compress an image to 50KB?
+
+        <span
+          class="
+            text-xl
+            text-slate-400
+            transition
+            group-open:rotate-45
+          "
+        >
+          +
+        </span>
+
+      </summary>
+
+
+      <p
+        class="
+          mt-3
+          text-sm
+          leading-6
+          text-slate-500
+        "
+      >
+        Yes. Select the 50KB preset and upload a JPG,
+        JPEG or PNG image.
+      </p>
+
+    </details>
+
+
+
+    <details
+      class="
+        group
+        rounded-2xl
+        border border-slate-200
+        bg-white
+        p-5
+      "
+    >
+
+      <summary
+        class="
+          cursor-pointer
+          flex
+          items-center
+          justify-between
+          gap-4
+          font-black
+        "
+      >
+
+        Are my files uploaded?
+
+        <span
+          class="
+            text-xl
+            text-slate-400
+            transition
+            group-open:rotate-45
+          "
+        >
+          +
+        </span>
+
+      </summary>
+
+
+      <p
+        class="
+          mt-3
+          text-sm
+          leading-6
+          text-slate-500
+        "
+      >
+        No. Compression happens locally in your browser
+        using HTML5 Canvas.
+      </p>
+
+    </details>
+
+
+
+    <details
+      class="
+        group
+        rounded-2xl
+        border border-slate-200
+        bg-white
+        p-5
+      "
+    >
+
+      <summary
+        class="
+          cursor-pointer
+          flex
+          items-center
+          justify-between
+          gap-4
+          font-black
+        "
+      >
+
+        Does it support PNG?
+
+        <span
+          class="
+            text-xl
+            text-slate-400
+            transition
+            group-open:rotate-45
+          "
+        >
+          +
+        </span>
+
+      </summary>
+
+
+      <p
+        class="
+          mt-3
+          text-sm
+          leading-6
+          text-slate-500
+        "
+      >
+        Yes. PNG images can be uploaded. The compressed
+        result is generated as JPEG for better KB control.
+      </p>
+
+    </details>
+
+
+
+    <details
+      class="
+        group
+        rounded-2xl
+        border border-slate-200
+        bg-white
+        p-5
+      "
+    >
+
+      <summary
+        class="
+          cursor-pointer
+          flex
+          items-center
+          justify-between
+          gap-4
+          font-black
+        "
+      >
+
+        What happens with large smartphone photos?
+
+        <span
+          class="
+            text-xl
+            text-slate-400
+            transition
+            group-open:rotate-45
+          "
+        >
+          +
+        </span>
+
+      </summary>
+
+
+      <p
+        class="
+          mt-3
+          text-sm
+          leading-6
+          text-slate-500
+        "
+      >
+        Large images are automatically resized before
+        compression to reduce memory usage and improve
+        browser performance.
+      </p>
+
+    </details>
+
+  </div>
+
+</section>
+
+
+</main>
+
+
+
+<!-- ============================================================
+     FOOTER
+============================================================= -->
+
+<footer
+  class="
+    mt-14
+    border-t border-slate-200
+    bg-white
+  "
+>
+
+  <div
+    class="
+      max-w-6xl mx-auto
+      px-4 sm:px-6
+      py-8
+      flex flex-col
+      sm:flex-row
+      items-center
+      justify-between
+      gap-4
+    "
+  >
+
+    <div
+      class="
+        text-sm
+        text-slate-500
+      "
+    >
+
+      ©
+      <span id="year"></span>
+
+      <strong class="text-slate-700">
+        GovtDocCompressor.com
+      </strong>
+
+      . All rights reserved.
+
+    </div>
+
+
+    <div
+      class="
+        text-center
+        text-xs
+        text-slate-400
+      "
+    >
+      Client-side image compression • No server upload
+    </div>
+
+  </div>
+
+</footer>
+
+
+
+<!-- ============================================================
+     JAVASCRIPT
+============================================================= -->
+
+<script>
+
+/* =============================================================
+   STATE
+============================================================= */
+
+let targetKB = 50;
+
+let currentFile = null;
+
+let compressedBlob = null;
+
+let compressedFileName = "";
+
+let originalObjectURL = null;
+
+let compressedObjectURL = null;
+
+let compressionID = 0;
+
+
+/* =============================================================
+   DOM
+============================================================= */
+
+const fileInput =
+  document.getElementById("fileInput");
+
+const uploadZone =
+  document.getElementById("uploadZone");
+
+const browseButton =
+  document.getElementById("browseButton");
+
+const resultArea =
+  document.getElementById("resultArea");
+
+const originalPreview =
+  document.getElementById("originalPreview");
+
+const compressedPreview =
+  document.getElementById("compressedPreview");
+
+const compressedPlaceholder =
+  document.getElementById("compressedPlaceholder");
+
+const originalSize =
+  document.getElementById("originalSize");
+
+const compressedSize =
+  document.getElementById("compressedSize");
+
+const statOriginal =
+  document.getElementById("statOriginal");
+
+const statCompressed =
+  document.getElementById("statCompressed");
+
+const statSaved =
+  document.getElementById("statSaved");
+
+const statQuality =
+  document.getElementById("statQuality");
+
+const fileName =
+  document.getElementById("fileName");
+
+const statusBox =
+  document.getElementById("statusBox");
+
+const downloadButton =
+  document.getElementById("downloadButton");
+
+const resetButton =
+  document.getElementById("resetButton");
+
+const targetLabel =
+  document.getElementById("targetLabel");
+
+const progressContainer =
+  document.getElementById("progressContainer");
+
+const progressBar =
+  document.getElementById("progressBar");
+
+const progressText =
+  document.getElementById("progressText");
+
+const presets =
+  document.querySelectorAll(".preset");
+
+
+/* =============================================================
+   YEAR
+============================================================= */
+
+document.getElementById("year").textContent =
+  new Date().getFullYear();
+
+
+/* =============================================================
+   FORMAT BYTES
+============================================================= */
+
+function formatBytes(bytes) {
+
+  if (!Number.isFinite(bytes)) {
+    return "—";
+  }
+
+  if (bytes < 1024) {
+    return `${bytes} B`;
+  }
+
+  if (bytes < 1024 * 1024) {
+    return `${(bytes / 1024).toFixed(1)} KB`;
+  }
+
+  return `${(bytes / 1024 / 1024).toFixed(2)} MB`;
+
+}
+
+
+/* =============================================================
+   UPDATE PROGRESS
+============================================================= */
+
+function updateProgress(value) {
+
+  const safeValue =
+    Math.max(
+      0,
+      Math.min(100, value)
+    );
+
+  progressBar.style.width =
+    `${safeValue}%`;
+
+  progressText.textContent =
+    `${Math.round(safeValue)}%`;
+
+}
+
+
+/* =============================================================
+   PRESET BUTTONS
+============================================================= */
+
+presets.forEach(button => {
+
+  button.addEventListener(
+    "click",
+    async () => {
+
+      targetKB =
+        Number(button.dataset.target);
+
+      presets.forEach(btn => {
+        btn.classList.remove("active");
+      });
+
+      button.classList.add("active");
+
+      targetLabel.textContent =
+        `${targetKB} KB selected`;
+
+      /*
+        If an image already exists,
+        compress it again immediately.
+      */
+
+      if (currentFile) {
+        await compressCurrentFile();
+      }
+
+    }
+  );
+
+});
+
+
+/* =============================================================
+   OPEN FILE PICKER
+============================================================= */
+
+/*
+  IMPORTANT:
+  We keep this simple.
+
+  The button opens the hidden file input.
+*/
+
+browseButton.addEventListener(
+  "click",
+  function(event) {
+
+    event.preventDefault();
+
+    event.stopPropagation();
+
+    fileInput.click();
+
+  }
+);
+
+
+/*
+  Clicking the rest of the upload box also opens picker.
+*/
+
+uploadZone.addEventListener(
+  "click",
+  function(event) {
+
+    /*
+      If the button itself was clicked,
+      don't call fileInput.click() a second time.
+    */
+
+    if (
+      event.target.closest("#browseButton")
+    ) {
+      return;
+    }
+
+    fileInput.click();
+
+  }
+);
+
+
+/* =============================================================
+   FILE INPUT CHANGE
+============================================================= */
+
+fileInput.addEventListener(
+  "change",
+  function(event) {
+
+    const file =
+      event.target.files &&
+      event.target.files[0];
+
+    if (!file) {
+      return;
+    }
+
+    handleFile(file);
+
+  }
+);
+
+
+/* =============================================================
+   DRAG & DROP
+============================================================= */
+
+[
+  "dragenter",
+  "dragover"
+].forEach(eventName => {
+
+  uploadZone.addEventListener(
+    eventName,
+    event => {
+
+      event.preventDefault();
+      event.stopPropagation();
+
+      uploadZone.classList.add(
+        "dragover"
+      );
+
+    }
+  );
+
+});
+
+
+[
+  "dragleave",
+  "drop"
+].forEach(eventName => {
+
+  uploadZone.addEventListener(
+    eventName,
+    event => {
+
+      event.preventDefault();
+      event.stopPropagation();
+
+      uploadZone.classList.remove(
+        "dragover"
+      );
+
+    }
+  );
+
+});
+
+
+uploadZone.addEventListener(
+  "drop",
+  event => {
+
+    const files =
+      event.dataTransfer.files;
+
+    if (!files || !files.length) {
+      return;
+    }
+
+    handleFile(files[0]);
+
+  }
+);
+
+
+/* =============================================================
+   VALIDATE IMAGE
+============================================================= */
+
+function isValidImage(file) {
+
+  const validTypes = [
+    "image/jpeg",
+    "image/png",
+    "image/jpg"
+  ];
+
+  const extension =
+    file.name
+      .split(".")
+      .pop()
+      .toLowerCase();
+
+  const validExtensions = [
+    "jpg",
+    "jpeg",
+    "png"
+  ];
+
+  return (
+    validTypes.includes(file.type) ||
+    validExtensions.includes(extension)
+  );
+
+}
+
+
+/* =============================================================
+   HANDLE FILE
+============================================================= */
+
+function handleFile(file) {
+
+  if (!isValidImage(file)) {
+
+    alert(
+      "Please select a JPG, JPEG or PNG image."
+    );
+
+    return;
+  }
+
+
+  /*
+    Prevent extremely large files
+    from exhausting browser memory.
+  */
+
+  if (
+    file.size >
+    50 * 1024 * 1024
+  ) {
+
+    alert(
+      "Maximum input file size is 50 MB."
+    );
+
+    return;
+  }
+
+
+  /*
+    Every new compression gets a unique ID.
+    This prevents an old compression operation
+    from overwriting a newer upload.
+  */
+
+  compressionID++;
+
+
+  currentFile = file;
+
+  showOriginal(file);
+
+  compressCurrentFile();
+
+}
+
+
+/* =============================================================
+   SHOW ORIGINAL
+============================================================= */
+
+function showOriginal(file) {
+
+  cleanupURLs();
+
+
+  /*
+    Create local object URL.
+    This does NOT upload the file.
+  */
+
+  originalObjectURL =
+    URL.createObjectURL(file);
+
+
+  /*
+    THIS is the actual image preview.
+  */
+
+  originalPreview.src =
+    originalObjectURL;
+
+
+  originalPreview.classList.remove(
+    "hidden"
+  );
+
+
+  fileName.textContent =
+    file.name;
+
+
+  originalSize.textContent =
+    formatBytes(file.size);
+
+
+  statOriginal.textContent =
+    formatBytes(file.size);
+
+
+  statCompressed.textContent =
+    "—";
+
+  statSaved.textContent =
+    "—";
+
+  statQuality.textContent =
+    "—";
+
+
+  compressedPreview.removeAttribute(
+    "src"
+  );
+
+  compressedPreview.classList.add(
+    "hidden"
+  );
+
+  compressedPlaceholder.classList.remove(
+    "hidden"
+  );
+
+
+  compressedSize.textContent =
+    "—";
+
+
+  resultArea.classList.remove(
+    "hidden"
+  );
+
+  resultArea.classList.add(
+    "fade-in"
+  );
+
+
+  statusBox.className =
+    `
+      mt-5
+      rounded-2xl
+      border border-slate-200
+      bg-slate-50
+      p-4
+      text-sm
+      text-slate-600
+    `;
+
+
+  statusBox.textContent =
+    "Image selected. Starting compression...";
+
+
+  downloadButton.disabled =
+    true;
+
+}
+
+
+/* =============================================================
+   LOAD IMAGE SAFELY
+============================================================= */
+
+function loadImage(file) {
+
+  return new Promise(
+    (resolve, reject) => {
+
+      const image =
+        new Image();
+
+      const url =
+        URL.createObjectURL(file);
+
+
+      image.onload =
+        () => {
+
+          URL.revokeObjectURL(url);
+
+          resolve(image);
+
+        };
+
+
+      image.onerror =
+        () => {
+
+          URL.revokeObjectURL(url);
+
+          reject(
+            new Error(
+              "Unable to decode image."
+            )
+          );
+
+        };
+
+
+      image.src =
+        url;
+
+    }
+  );
+
+}
+
+
+/* =============================================================
+   CALCULATE DIMENSIONS
+============================================================= */
+
+function calculateDimensions(
+  width,
+  height,
+  maxDimension
+) {
+
+  if (
+    width <= maxDimension &&
+    height <= maxDimension
+  ) {
+
+    return {
+      width,
+      height
+    };
+
+  }
+
+
+  const ratio =
+    Math.min(
+      maxDimension / width,
+      maxDimension / height
+    );
+
+
+  return {
+
+    width:
+      Math.max(
+        1,
+        Math.round(width * ratio)
+      ),
+
+    height:
+      Math.max(
+        1,
+        Math.round(height * ratio)
+      )
+
+  };
+
+}
+
+
+/* =============================================================
+   CANVAS → BLOB
+============================================================= */
+
+function canvasToBlob(
+  canvas,
+  quality
+) {
+
+  return new Promise(
+    (resolve, reject) => {
+
+      canvas.toBlob(
+        blob => {
+
+          if (!blob) {
+
+            reject(
+              new Error(
+                "Browser failed to create JPEG."
+              )
+            );
+
+            return;
+          }
+
+          resolve(blob);
+
+        },
+
+        "image/jpeg",
+
+        quality
+
+      );
+
+    }
+  );
+
+}
+
+
+/* =============================================================
+   MAIN COMPRESSION ENGINE
+============================================================= */
+
+async function compressCurrentFile() {
+
+  if (!currentFile) {
+    return;
+  }
+
+
+  /*
+    Unique operation ID.
+  */
+
+  const operationID =
+    ++compressionID;
+
+
+  compressedBlob =
+    null;
+
+  downloadButton.disabled =
+    true;
+
+
+  progressContainer.classList.remove(
+    "hidden"
+  );
+
+
+  updateProgress(5);
+
+
+  statusBox.className =
+    `
+      mt-5
+      rounded-2xl
+      border border-blue-200
+      bg-blue-50
+      p-4
+      text-sm
+      text-blue-800
+    `;
+
+
+  statusBox.innerHTML =
+    `
+      <strong>Compressing...</strong>
+      Preparing your image locally.
+    `;
+
+
+  try {
+
+    /*
+      Let browser update UI.
+    */
+
+    await new Promise(
+      resolve => setTimeout(resolve, 30)
+    );
+
+
+    const image =
+      await loadImage(currentFile);
+
+
+    /*
+      Dimension levels.
+
+      Large smartphone images are progressively reduced.
+    */
+
+    const dimensionSteps = [
+      2400,
+      2000,
+      1800,
+      1600,
+      1400,
+      1200,
+      1000,
+      850,
+      700,
+      600,
+      500,
+      400
+    ];
+
+
+    let finalResult =
+      null;
+
+
+    for (
+      let index = 0;
+      index < dimensionSteps.length;
+      index++
+    ) {
+
+      /*
+        Abort if another file/preset operation started.
+      */
+
+      if (
+        operationID !== compressionID
+      ) {
+        return;
+      }
+
+
+      const maxDimension =
+        dimensionSteps[index];
+
+
+      const dimensions =
+        calculateDimensions(
+          image.naturalWidth,
+          image.naturalHeight,
+          maxDimension
+        );
+
+
+      /*
+        Create canvas.
+      */
+
+      const canvas =
+        document.createElement(
+          "canvas"
+        );
+
+
+      canvas.width =
+        dimensions.width;
+
+      canvas.height =
+        dimensions.height;
+
+
+      const ctx =
+        canvas.getContext(
+          "2d",
+          {
+            alpha: false
+          }
+        );
+
+
+      /*
+        White background.
+
+        Useful when a PNG has transparency
+        and is converted to JPEG.
+      */
+
+      ctx.fillStyle =
+        "#ffffff";
+
+
+      ctx.fillRect(
+        0,
+        0,
+        canvas.width,
+        canvas.height
+      );
+
+
+      ctx.imageSmoothingEnabled =
+        true;
+
+      ctx.imageSmoothingQuality =
+        "high";
+
+
+      ctx.drawImage(
+        image,
+        0,
+        0,
+        canvas.width,
+        canvas.height
+      );
+
+
+      /*
+        Binary search for best JPEG quality
+        under target KB.
+      */
+
+      let low =
+        0.05;
+
+      let high =
+        0.95;
+
+
+      let bestUnderTarget =
+        null;
+
+      let bestQuality =
+        0.05;
+
+
+      const ITERATIONS =
+        10;
+
+
+      for (
+        let iteration = 0;
+        iteration < ITERATIONS;
+        iteration++
+      ) {
+
+        if (
+          operationID !== compressionID
+        ) {
+          return;
+        }
+
+
+        const quality =
+          (low + high) / 2;
+
+
+        const blob =
+          await canvasToBlob(
+            canvas,
+            quality
+          );
+
+
+        const sizeKB =
+          blob.size / 1024;
+
+
+        if (
+          sizeKB <= targetKB
+        ) {
+
+          bestUnderTarget =
+            blob;
+
+          bestQuality =
+            quality;
+
+          /*
+            Try higher quality.
+          */
+
+          low =
+            quality;
+
+        } else {
+
+          /*
+            Too large.
+          */
+
+          high =
+            quality;
+
+        }
+
+
+        /*
+          Approximate progress.
+        */
+
+        const progress =
+          10 +
+          (
+            (index / dimensionSteps.length) * 70
+          ) +
+          (
+            (iteration / ITERATIONS) * 10
+          );
+
+
+        updateProgress(
+          progress
+        );
+
+
+        /*
+          Yield occasionally so mobile UI
+          remains responsive.
+        */
+
+        if (
+          iteration % 2 === 0
+        ) {
+
+          await new Promise(
+            resolve =>
+              setTimeout(resolve, 0)
+          );
+
+        }
+
+      }
+
+
+      /*
+        If we found a file under target,
+        we're done.
+      */
+
+      if (bestUnderTarget) {
+
+        finalResult = {
+
+          blob:
+            bestUnderTarget,
+
+          quality:
+            bestQuality,
+
+          width:
+            canvas.width,
+
+          height:
+            canvas.height
+
+        };
+
+        break;
+
+      }
+
+    }
+
+
+    /*
+      Final fallback.
+
+      This is only reached when the target is
+      extremely difficult to reach.
+    */
+
+    if (!finalResult) {
+
+      const dimensions =
+        calculateDimensions(
+          image.naturalWidth,
+          image.naturalHeight,
+          400
+        );
+
+
+      const canvas =
+        document.createElement(
+          "canvas"
+        );
+
+
+      canvas.width =
+        dimensions.width;
+
+      canvas.height =
+        dimensions.height;
+
+
+      const ctx =
+        canvas.getContext(
+          "2d",
+          {
+            alpha: false
+          }
+        );
+
+
+      ctx.fillStyle =
+        "#ffffff";
+
+
+      ctx.fillRect(
+        0,
+        0,
+        canvas.width,
+        canvas.height
+      );
+
+
+      ctx.imageSmoothingEnabled =
+        true;
+
+      ctx.imageSmoothingQuality =
+        "high";
+
+
+      ctx.drawImage(
+        image,
+        0,
+        0,
+        canvas.width,
+        canvas.height
+      );
+
+
+      const blob =
+        await canvasToBlob(
+          canvas,
+          0.05
+        );
+
+
+      finalResult = {
+
+        blob,
+
+        quality:
+          0.05,
+
+        width:
+          canvas.width,
+
+        height:
+          canvas.height
+
+      };
+
+    }
+
+
+    /*
+      Make sure this operation is still current.
+    */
+
+    if (
+      operationID !== compressionID
+    ) {
+      return;
+    }
+
+
+    compressedBlob =
+      finalResult.blob;
+
+
+    /*
+      Create preview URL.
+    */
+
+    compressedObjectURL =
+      URL.createObjectURL(
+        compressedBlob
+      );
+
+
+    compressedPreview.src =
+      compressedObjectURL;
+
+
+    compressedPreview.classList.remove(
+      "hidden"
+    );
+
+
+    compressedPlaceholder.classList.add(
+      "hidden"
+    );
+
+
+    /*
+      Filename.
+    */
+
+    compressedFileName =
+      createCompressedFilename(
+        currentFile.name,
+        targetKB
+      );
+
+
+    /*
+      Statistics.
+    */
+
+    const originalBytes =
+      currentFile.size;
+
+    const compressedBytes =
+      compressedBlob.size;
+
+
+    const savedPercent =
+      Math.max(
+        0,
+        (
+          1 -
+          compressedBytes /
+          originalBytes
+        ) * 100
+      );
+
+
+    const actualKB =
+      compressedBytes / 1024;
+
+
+    originalSize.textContent =
+      formatBytes(
+        originalBytes
+      );
+
+
+    compressedSize.textContent =
+      formatBytes(
+        compressedBytes
+      );
+
+
+    statOriginal.textContent =
+      formatBytes(
+        originalBytes
+      );
+
+
+    statCompressed.textContent =
+      formatBytes(
+        compressedBytes
+      );
+
+
+    statSaved.textContent =
+      `${savedPercent.toFixed(1)}%`;
+
+
+    statQuality.textContent =
+      `${Math.round(
+        finalResult.quality * 100
+      )}%`;
+
+
+    updateProgress(100);
+
+
+    /*
+      Status.
+    */
+
+    if (
+      actualKB <= targetKB
+    ) {
+
+      statusBox.className =
+        `
+          mt-5
+          rounded-2xl
+          border border-emerald-200
+          bg-emerald-50
+          p-4
+          text-sm
+          text-emerald-800
+        `;
+
+
+      statusBox.innerHTML =
+        `
+          <strong>✓ Ready!</strong>
+          Your image is
+          <strong>
+            ${actualKB.toFixed(1)} KB
+          </strong>
+          and is within the
+          <strong>
+            ${targetKB} KB
+          </strong>
+          target.
+
+          <div class="mt-1 text-xs opacity-80">
+            ${finalResult.width} ×
+            ${finalResult.height}px
+          </div>
+        `;
+
+    } else {
+
+      statusBox.className =
+        `
+          mt-5
+          rounded-2xl
+          border border-amber-200
+          bg-amber-50
+          p-4
+          text-sm
+          text-amber-800
+        `;
+
+
+      statusBox.innerHTML =
+        `
+          <strong>Compression complete.</strong>
+          The smallest practical result produced
+          by this browser is
+          <strong>
+            ${actualKB.toFixed(1)} KB
+          </strong>.
+        `;
+
+    }
+
+
+    /*
+      Enable download.
+    */
+
+    downloadButton.disabled =
+      false;
+
+
+  } catch (error) {
+
+    console.error(
+      "Compression error:",
+      error
+    );
+
+
+    if (
+      operationID !== compressionID
+    ) {
+      return;
+    }
+
+
+    statusBox.className =
+      `
+        mt-5
+        rounded-2xl
+        border border-red-200
+        bg-red-50
+        p-4
+        text-sm
+        text-red-700
+      `;
+
+
+    statusBox.innerHTML =
+      `
+        <strong>Compression failed.</strong>
+        Please try another JPG, JPEG or PNG image.
+      `;
+
+
+  } finally {
+
+    if (
+      operationID === compressionID
+    ) {
+
+      progressContainer.classList.add(
+        "hidden"
+      );
+
+    }
+
+  }
+
+}
+
+
+/* =============================================================
+   CREATE DOWNLOAD FILENAME
+============================================================= */
+
+function createCompressedFilename(
+  originalName,
+  target
+) {
+
+  /*
+    Remove extension.
+  */
+
+  const base =
+    originalName
+      .replace(/\.[^/.]+$/, "");
+
+
+  /*
+    Make filename safe.
+  */
+
+  const safe =
+    base
+      .replace(/[^\w\- ]+/g, "")
+      .trim()
+      .replace(/\s+/g, "_");
+
+
+  return (
+    `compressed_${target}kb_` +
+    `${safe || "image"}.jpg`
+  );
+
+}
+
+
+/* =============================================================
+   DOWNLOAD
+============================================================= */
+
+downloadButton.addEventListener(
+  "click",
+  function() {
+
+    if (!compressedBlob) {
+      return;
+    }
+
+
+    const url =
+      URL.createObjectURL(
+        compressedBlob
+      );
+
+
+    const anchor =
+      document.createElement(
+        "a"
+      );
+
+
+    anchor.href =
+      url;
+
+
+    anchor.download =
+      compressedFileName;
+
+
+    /*
+      Append to DOM for maximum
+      browser compatibility.
+    */
+
+    document.body.appendChild(
+      anchor
+    );
+
+
+    anchor.click();
+
+
+    anchor.remove();
+
+
+    /*
+      Release URL later.
+    */
+
+    setTimeout(
+      () => {
+        URL.revokeObjectURL(url);
+      },
+      1500
+    );
+
+  }
+);
+
+
+/* =============================================================
+   RESET
+============================================================= */
+
+resetButton.addEventListener(
+  "click",
+  resetTool
+);
+
+
+function resetTool() {
+
+  /*
+    Cancel currently running compression.
+  */
+
+  compressionID++;
+
+
+  currentFile =
+    null;
+
+
+  compressedBlob =
+    null;
+
+
+  compressedFileName =
+    "";
+
+
+  cleanupURLs();
+
+
+  /*
+    Reset file input.
+
+    This also allows selecting the SAME image
+    again after removing it.
+  */
+
+  fileInput.value =
+    "";
+
+
+  resultArea.classList.add(
+    "hidden"
+  );
+
+
+  originalPreview.removeAttribute(
+    "src"
+  );
+
+
+  compressedPreview.removeAttribute(
+    "src"
+  );
+
+
+  compressedPlaceholder.classList.remove(
+    "hidden"
+  );
+
+
+  downloadButton.disabled =
+    true;
+
+
+  progressContainer.classList.add(
+    "hidden"
+  );
+
+
+  updateProgress(0);
+
+
+  statusBox.textContent =
+    "Upload an image to begin.";
+
+}
+
+
+/* =============================================================
+   CLEANUP OBJECT URLS
+============================================================= */
+
+function cleanupURLs() {
+
+  if (originalObjectURL) {
+
+    URL.revokeObjectURL(
+      originalObjectURL
+    );
+
+    originalObjectURL =
+      null;
+
+  }
+
+
+  if (compressedObjectURL) {
+
+    URL.revokeObjectURL(
+      compressedObjectURL
+    );
+
+    compressedObjectURL =
+      null;
+
+  }
+
+}
+
+
+/* =============================================================
+   PAGE EXIT CLEANUP
+============================================================= */
+
+window.addEventListener(
+  "beforeunload",
+  cleanupURLs
+);
+
+</script>
+
+
+
+<!-- ============================================================
+     STRUCTURED DATA
+============================================================= -->
+
+<script type="application/ld+json">
+
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "GovtDocCompressor.com",
+  "url": "https://govtdoccompressor.com/",
+  "description": "Free browser-based government exam photo, signature and document compressor.",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "INR"
+  }
+}
+
+</script>
+
+
+<script type="application/ld+json">
+
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+
+    {
+      "@type": "Question",
+      "name": "Can I compress an image to 50KB?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Select the 50KB preset and upload a JPG, JPEG or PNG image."
+      }
+    },
+
+    {
+      "@type": "Question",
+      "name": "Are my files uploaded?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Image compression is performed locally in the browser using HTML5 Canvas."
+      }
+    },
+
+    {
+      "@type": "Question",
+      "name": "Does it support PNG?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. PNG images can be uploaded and the compressed result is generated as JPEG."
+      }
+    }
+
+  ]
+}
+
+</script>
+
+
+</body>
+</html>
+```
